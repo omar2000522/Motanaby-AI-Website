@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    
+  <head>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/style.css"
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <!--link href="style.css" rel="stylesheet" type="text/css" /-->
+    <script src="libs/p5.js"></script>
+    <script src="libs/p5.dom.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.14.2/dist/tf.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <h1 class="logo">
+         Motanaby AI
+    </h1>
+    <div class="home">
+        <form class="gen-form">
+            <label for="starting-line" class="input-label">
+                Input your starting line for the poem generation here (at least 30 characters, in Arabic)
+            </label>
+            <input class="u-full-width" type="text" id="gen-input" name="gen-input">
+            <label>Select the length of the output:</label>
+            <input type="radio" name="length" id="short" checked> Short (100 characters, &lt;1 minute to compute)<br>
+            <input type="radio" name="length" id="normal"> Normal (200 characters, 1 minute to compute)<br>
+            <input type="radio" name="length" id="long"> Long (500 characters, 5 minutes to compute, a desktop is recommended)<br>
+            <div>Keep in mind that computing time is faster if you're not using a mobile device.</div>  
+
+            <button class="button-primary">Generate Poem</button>
+        </form>
+        <script src="sketch.js"></script>
+        <script src="submit.js"></script>
+        <script src="results.js"></script>
+        <script src="validation.js"></script>
+        <script src="text_gen.js"></script>
+    </div>
+    <div class="loading" id="loading"><img src="images/loading.gif" height="42" width="42"></div>
+    <div class="output" id="output">
+        <label class="out-label" id="output-lab"></label>
+        <b>
+
+
+
+            Thank you for trying this experimental version of this program, if you encounter errors or bugs, or if you have any comments or questions (I would love to hear your comments and questions), please contact me at:<br/>
+            <br/>
+            Email: omar2000522@gmail.com<br/>
+            Whatsapp/Phone number: +966580271500
+            <br/>
+            <br/>
+        </b>
+        <button onclick="location.reload();">Generate again!</button>
+    </div>
+  </body>
+</html>

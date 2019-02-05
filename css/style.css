@@ -1,0 +1,47 @@
+.logo {
+    text-align: center;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 114, 0.836);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.input-label {
+    text-align: center;
+    color: black;
+    font-weight: 5;
+}
+
+.out-label {
+    text-align: center;
+    color: black;
+    font-size: 2em;
+}
+
+.button-primary {
+    color: black;
+}
+
+.gen-form {
+    background-color: rgba(173, 216, 230, 0.95);
+    width: 70%;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.loading {
+    text-align: center;
+    padding: 50px;
+    display: none;
+}
+
+.output {
+    background-color: rgba(173, 216, 230, 0.95);
+    width: 70%;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 12px;
+    font-size: 0.875em;
+    display: none;
+}
